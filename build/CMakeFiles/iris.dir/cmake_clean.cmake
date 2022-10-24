@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/iris.dir/Iris.cpp.o"
-  "CMakeFiles/iris.dir/test.cpp.o"
   "iris"
   "iris.pdb"
 )
