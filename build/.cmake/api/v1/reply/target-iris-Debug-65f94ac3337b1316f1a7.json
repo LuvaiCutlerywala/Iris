@@ -10,7 +10,8 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"install"
 		],
 		"files" : 
 		[
@@ -26,6 +27,12 @@
 				"file" : 0,
 				"line" : 12,
 				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
 			}
 		]
 	},
@@ -35,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " "
+					"fragment" : "-g  "
 				},
 				{
 					"fragment" : "-std=gnu++2a"
@@ -49,10 +56,28 @@
 		}
 	],
 	"id" : "iris::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"

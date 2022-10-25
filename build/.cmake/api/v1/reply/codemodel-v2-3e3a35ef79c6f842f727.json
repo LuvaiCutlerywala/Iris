@@ -6,6 +6,7 @@
 			[
 				{
 					"build" : ".",
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -18,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -38,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "iris::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-iris-fbf963449af9a964e375.json",
+					"jsonFile" : "target-iris-Debug-65f94ac3337b1316f1a7.json",
 					"name" : "iris",
 					"projectIndex" : 0
 				}

@@ -10,3 +10,7 @@ set(iris_source_files
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(iris ${iris_source_files})
+
+install(TARGETS iris RUNTIME DESTINATION bin)
+
+include(CPack)
