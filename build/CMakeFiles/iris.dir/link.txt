@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/iris.dir/Iris.cpp.o  -o iris 

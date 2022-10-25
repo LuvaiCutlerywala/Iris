@@ -1,9 +1,0 @@
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/install/strip.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/install/local.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/package_source.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/install.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/list_install_components.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/package.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/iris.dir

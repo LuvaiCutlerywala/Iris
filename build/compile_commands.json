@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build",
-  "command": "/usr/bin/g++    -g   -std=gnu++2a -o CMakeFiles/iris.dir/Iris.cpp.o -c /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/Iris.cpp",
-  "file": "/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/Iris.cpp"
-}
-]
