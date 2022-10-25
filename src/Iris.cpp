@@ -52,3 +52,7 @@ std::time_t Iris::getCurrentFormattedTime()
         std::chrono::system_clock::now()
     );
 }
+
+//Keep the compiler happy.
+int main()
+{}

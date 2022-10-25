@@ -34,6 +34,7 @@ cd Iris/build
 cmake ../src
 make
 make package
+sudo make install
 ```
 This will build the project, and the install it as a package on your system.
 ## Usage
