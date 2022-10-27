@@ -55,4 +55,6 @@ std::time_t Iris::getCurrentFormattedTime()
 
 //Keep the compiler happy.
 int main()
-{}
+{
+    std::cout << "Your friendly neighbourhood logging library, Iris, has been triggered.\n";
+}
