@@ -46,15 +46,69 @@ void Iris::warn(const std::string logStatement)
 
 }
 
+void Iris::logInfoIfTrue(bool condition, const std::string logStatement)
+{
+
+    if(condition)
+    {
+        Iris::info(logStatement);
+    }
+
+}
+
+void Iris::logInfoIfFalse(bool condition, const std::string logStatement)
+{
+
+    if(!condition)
+    {
+        Iris::info(logStatement);
+    }
+
+}
+
+void Iris::logWarnIfTrue(bool condition, const std::string logStatement)
+{
+
+    if(condition)
+    {
+        Iris::warn(logStatement);
+    }
+
+}
+
+void Iris::logWarnIfFalse(bool condition, const std::string logStatement)
+{
+
+    if(!condition)
+    {
+        Iris::warn(logStatement);
+    }
+
+}
+
+void Iris::logErrorIfTrue(bool condition, const std::string logStatement)
+{
+
+    if(condition)
+    {
+        Iris::error(logStatement);
+    }
+
+}
+
+void Iris::logErrorIfFalse(bool condition, const std::string logStatement)
+{
+
+    if(!condition)
+    {
+        Iris::error(logStatement);
+    }
+
+}
+
 std::time_t Iris::getCurrentFormattedTime()
 {
     return std::chrono::system_clock::to_time_t(
         std::chrono::system_clock::now()
     );
-}
-
-//Keep the compiler happy.
-int main()
-{
-    std::cout << "Your friendly neighbourhood logging library, Iris, has been triggered.\n";
 }

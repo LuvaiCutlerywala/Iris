@@ -1,2 +1,2 @@
-/usr/bin/ar qc libiris.a  CMakeFiles/iris.dir/Iris.cpp.o
+/usr/bin/ar qc libiris.a CMakeFiles/iris.dir/Iris.cpp.o
 /usr/bin/ranlib libiris.a
