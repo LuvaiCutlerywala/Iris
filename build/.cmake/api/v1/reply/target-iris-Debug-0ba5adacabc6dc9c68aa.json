@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "libiris.a"
+			"path" : "iris"
 		}
 	],
 	"backtrace" : 1,
@@ -11,7 +10,8 @@
 	{
 		"commands" : 
 		[
-			"add_library"
+			"add_executable",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -25,7 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -53,13 +59,40 @@
 			},
 			"sourceIndexes" : 
 			[
-				1
+				0
 			]
 		}
 	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "iris-lib::@6890427a1f51a3e7e1df"
+		}
+	],
 	"id" : "iris::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libiris-lib.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "iris",
-	"nameOnDisk" : "libiris.a",
+	"nameOnDisk" : "iris",
 	"paths" : 
 	{
 		"build" : ".",
@@ -68,17 +101,10 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				0
-			]
-		},
-		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				1
+				0
 			]
 		}
 	],
@@ -86,15 +112,10 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "Iris.hpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Iris.cpp",
-			"sourceGroupIndex" : 1
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "EXECUTABLE"
 }

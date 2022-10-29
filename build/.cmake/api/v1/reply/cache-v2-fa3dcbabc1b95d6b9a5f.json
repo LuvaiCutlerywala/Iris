@@ -1130,6 +1130,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "LIBMODE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Turn on to compile to library or off to compile to executable (default is on)"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "LIB_MODE",
 			"properties" : 
 			[

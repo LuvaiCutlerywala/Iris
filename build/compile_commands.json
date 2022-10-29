@@ -1,12 +1,12 @@
 [
 {
   "directory": "/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build",
-  "command": "/usr/bin/g++   -g -std=gnu++2a -o CMakeFiles/iris.dir/Iris.cpp.o -c /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/Iris.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++2a -o CMakeFiles/iris-lib.dir/Iris.cpp.o -c /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/Iris.cpp",
   "file": "/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/Iris.cpp"
 },
 {
   "directory": "/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build",
-  "command": "/usr/bin/g++   -g -std=gnu++2a -o CMakeFiles/iris-test.dir/main.cpp.o -c /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/main.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++2a -o CMakeFiles/iris.dir/main.cpp.o -c /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/main.cpp",
   "file": "/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/src/main.cpp"
 }
 ]

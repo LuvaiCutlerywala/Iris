@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named iris-lib
+
+# Build rule for target.
+iris-lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 iris-lib
+.PHONY : iris-lib
+
+# fast build rule for target.
+iris-lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-lib.dir/build.make CMakeFiles/iris-lib.dir/build
+.PHONY : iris-lib/fast
+
+#=============================================================================
 # Target rules for targets named iris
 
 # Build rule for target.
@@ -129,25 +142,12 @@ iris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/build
 .PHONY : iris/fast
 
-#=============================================================================
-# Target rules for targets named iris-test
-
-# Build rule for target.
-iris-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 iris-test
-.PHONY : iris-test
-
-# fast build rule for target.
-iris-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-test.dir/build.make CMakeFiles/iris-test.dir/build
-.PHONY : iris-test/fast
-
 Iris.o: Iris.cpp.o
 .PHONY : Iris.o
 
 # target to build an object file
 Iris.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/Iris.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-lib.dir/build.make CMakeFiles/iris-lib.dir/Iris.cpp.o
 .PHONY : Iris.cpp.o
 
 Iris.i: Iris.cpp.i
@@ -155,7 +155,7 @@ Iris.i: Iris.cpp.i
 
 # target to preprocess a source file
 Iris.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/Iris.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-lib.dir/build.make CMakeFiles/iris-lib.dir/Iris.cpp.i
 .PHONY : Iris.cpp.i
 
 Iris.s: Iris.cpp.s
@@ -163,7 +163,7 @@ Iris.s: Iris.cpp.s
 
 # target to generate assembly for a file
 Iris.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/Iris.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-lib.dir/build.make CMakeFiles/iris-lib.dir/Iris.cpp.s
 .PHONY : Iris.cpp.s
 
 main.o: main.cpp.o
@@ -171,7 +171,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-test.dir/build.make CMakeFiles/iris-test.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -179,7 +179,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-test.dir/build.make CMakeFiles/iris-test.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -187,7 +187,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris-test.dir/build.make CMakeFiles/iris-test.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/iris.dir/build.make CMakeFiles/iris.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -199,7 +199,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... iris"
-	@echo "... iris-test"
+	@echo "... iris-lib"
 	@echo "... Iris.o"
 	@echo "... Iris.i"
 	@echo "... Iris.s"

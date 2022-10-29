@@ -211,6 +211,10 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Turn on to compile to library or off to compile to executable
+// (default is on)
+LIBMODE:BOOL=OFF
+
 //Compile project into library or as standalone binary.
 LIB_MODE:BOOL=OFF
 

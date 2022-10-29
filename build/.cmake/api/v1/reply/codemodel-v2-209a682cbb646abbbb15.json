@@ -41,15 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "iris::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-iris-Debug-6d8372255d80e989ec56.json",
+					"jsonFile" : "target-iris-Debug-0ba5adacabc6dc9c68aa.json",
 					"name" : "iris",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "iris-test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-iris-test-Debug-7dcacb8b501f10e4c250.json",
-					"name" : "iris-test",
+					"id" : "iris-lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iris-lib-Debug-c2ce915b91eded446fad.json",
+					"name" : "iris-lib",
 					"projectIndex" : 0
 				}
 			]

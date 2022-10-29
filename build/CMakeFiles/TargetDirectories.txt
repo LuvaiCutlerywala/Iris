@@ -1,4 +1,4 @@
+/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/iris-lib.dir
 /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/iris.dir
-/mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/iris-test.dir
 /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/luvai_kcrxbon/C++Projects/iris/build/CMakeFiles/rebuild_cache.dir

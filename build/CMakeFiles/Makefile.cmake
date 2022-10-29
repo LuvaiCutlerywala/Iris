@@ -43,6 +43,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/iris-lib.dir/DependInfo.cmake"
   "CMakeFiles/iris.dir/DependInfo.cmake"
-  "CMakeFiles/iris-test.dir/DependInfo.cmake"
   )
