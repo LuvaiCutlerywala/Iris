@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "libiris-lib.a"
+			"path" : "libiris.so"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -36,10 +35,16 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -fPIC"
 				},
 				{
 					"fragment" : "-std=gnu++2a"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "iris_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -57,9 +62,20 @@
 			]
 		}
 	],
-	"id" : "iris-lib::@6890427a1f51a3e7e1df",
-	"name" : "iris-lib",
-	"nameOnDisk" : "libiris-lib.a",
+	"id" : "iris::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "iris",
+	"nameOnDisk" : "libiris.so",
 	"paths" : 
 	{
 		"build" : ".",
@@ -96,5 +112,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

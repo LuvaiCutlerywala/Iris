@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/iris.dir/main.cpp.o -o iris  libiris-lib.a 
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libiris.so -o libiris.so CMakeFiles/iris.dir/Iris.cpp.o 

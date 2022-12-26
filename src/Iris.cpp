@@ -3,11 +3,12 @@
 #include <iostream>
 #include <chrono>
 #include <algorithm>
+#include <fstream>
 
 void Iris::info(const std::string logStatement)
 {
 
-    std::string baseString = "[INFO] :" + logStatement +'\n';
+    std::string baseString = "[INFO] : " + logStatement +'\n';
     std::time_t time = Iris::getCurrentFormattedTime();
     std::string timeStr = std::string(std::ctime(&time));
 
@@ -21,7 +22,7 @@ void Iris::info(const std::string logStatement)
 void Iris::error(const std::string logStatement)
 {
 
-    std::string baseString = "[ERROR] :" + logStatement + '\n';
+    std::string baseString = "[ERROR] : " + logStatement + '\n';
     std::time_t time = Iris::getCurrentFormattedTime();
     std::string timeStr = std::string(std::ctime(&time));
 
@@ -35,7 +36,7 @@ void Iris::error(const std::string logStatement)
 void Iris::warn(const std::string logStatement)
 {
 
-    std::string baseString = "[WARN] :" + logStatement + '\n';
+    std::string baseString = "[WARN] : " + logStatement + '\n';
     std::time_t time = Iris::getCurrentFormattedTime();
     std::string timeStr = std::string(std::ctime(&time));
 
@@ -103,6 +104,57 @@ void Iris::logErrorIfFalse(bool condition, const std::string logStatement)
     {
         Iris::error(logStatement);
     }
+
+}
+
+void Iris::logInfoToFile(const std::string logStatement, const std::string absoluteFilename)
+{
+
+    std::ofstream fstream(absoluteFilename, std::ios::app);
+    std::string baseString = "[INFO] : " + logStatement + '\n';
+    std::time_t time = Iris::getCurrentFormattedTime();
+    std::string timeStr = std::string(std::ctime(&time));
+
+    timeStr.erase(std::remove(timeStr.begin(), timeStr.end(), '\n'), timeStr.end());
+    baseString = timeStr + ' ' + baseString;
+    
+    fstream << baseString;
+
+    fstream.close();
+
+}
+
+void Iris::logWarnToFile(const std::string logStatement, const std::string absoluteFilename)
+{
+
+    std::ofstream fstream(absoluteFilename, std::ios::app);
+    std::string baseString = "[WARN] : " + logStatement + '\n';
+    std::time_t time = Iris::getCurrentFormattedTime();
+    std::string timeStr = std::string(std::ctime(&time));
+
+    timeStr.erase(std::remove(timeStr.begin(), timeStr.end(), '\n'), timeStr.end());
+    baseString = timeStr + ' ' + baseString;
+    
+    fstream << baseString;
+
+    fstream.close();
+
+}
+
+void Iris::logErrorToFile(const std::string logStatement, const std::string absoluteFilename)
+{
+
+    std::ofstream fstream(absoluteFilename, std::ios::app);
+    std::string baseString = "[ERROR] : " + logStatement + '\n';
+    std::time_t time = Iris::getCurrentFormattedTime();
+    std::string timeStr = std::string(std::ctime(&time));
+
+    timeStr.erase(std::remove(timeStr.begin(), timeStr.end(), '\n'), timeStr.end());
+    baseString = timeStr + ' ' + baseString;
+    
+    fstream << baseString;
+
+    fstream.close();
 
 }
 

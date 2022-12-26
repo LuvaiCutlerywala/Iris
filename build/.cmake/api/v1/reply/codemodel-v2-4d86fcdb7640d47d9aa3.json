@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "iris",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -41,15 +39,8 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "iris::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-iris-Debug-0ba5adacabc6dc9c68aa.json",
+					"jsonFile" : "target-iris-Debug-facdd1d0b1c5a0154e90.json",
 					"name" : "iris",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "iris-lib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-iris-lib-Debug-c2ce915b91eded446fad.json",
-					"name" : "iris-lib",
 					"projectIndex" : 0
 				}
 			]

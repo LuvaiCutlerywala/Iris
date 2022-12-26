@@ -1,0 +1,10 @@
+Sat Dec 24 20:54:08 2022 [ERROR] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 12:13:20 2022 [INFO] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 12:13:20 2022 [WARN] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 12:13:20 2022 [ERROR] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 16:33:04 2022 [INFO] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 16:33:04 2022 [WARN] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 16:33:04 2022 [ERROR] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 16:33:20 2022 [INFO] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 16:33:20 2022 [WARN] : King Charles III is the first-born son of Queen Elizabeth II.
+Mon Dec 26 16:33:20 2022 [ERROR] : King Charles III is the first-born son of Queen Elizabeth II.

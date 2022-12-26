@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/iris.dir/main.cpp.o"
-  "CMakeFiles/iris.dir/main.cpp.o.d"
-  "iris"
-  "iris.pdb"
+  "CMakeFiles/iris.dir/Iris.cpp.o"
+  "CMakeFiles/iris.dir/Iris.cpp.o.d"
+  "libiris.pdb"
+  "libiris.so"
 )
 
 # Per-language clean rules from dependency scanning.
